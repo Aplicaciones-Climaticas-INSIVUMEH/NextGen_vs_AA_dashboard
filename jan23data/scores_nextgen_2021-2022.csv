@@ -1,0 +1,27 @@
+date,date,score,score,score,score,interpretation,interpretation,interpretation,interpretation
+year,month,HR,HSS,LEPS,2AFC,HR,HSS,LEPS,2AFC
+2021,1,70.45454545454545,6.2295081967213095,41.18181818181818,52.28915662650602,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Más hábil que el azar
+2021,2,47.36842105263158,-1.0638297872340368,11.684210526315788,50.475059382422806,Bueno,"Malo, menos hábil que el azar","Regular, igual de hábil que la climatología",Más hábil que el azar
+2021,3,28.94736842105263,0.0,-13.789473684210526,50.0,Bueno,"Regular, casi igual de hábil que el azar","Malo, menos hábil que la climatología",Igual de hábil que el azar
+2021,4,63.04347826086956,0.0,40.39130434782608,50.0,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Igual de hábil que el azar
+2021,5,43.75,0.0,14.60416666666667,50.0,Bueno,"Regular, casi igual de hábil que el azar","Regular, igual de hábil que la climatología",Igual de hábil que el azar
+2021,6,29.166666666666668,0.0,-11.145833333333329,50.0,Bueno,"Regular, casi igual de hábil que el azar","Malo, menos hábil que la climatología",Igual de hábil que el azar
+2021,7,22.916666666666668,0.0,-29.958333333333332,50.0,Regular,"Regular, casi igual de hábil que el azar","Malo, menos hábil que la climatología",Igual de hábil que el azar
+2021,8,70.2127659574468,0.0,47.808510638297875,50.0,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Igual de hábil que el azar
+2021,9,25.53191489361702,0.0,-19.680851063829788,50.0,Bueno,"Regular, casi igual de hábil que el azar","Malo, menos hábil que la climatología",Igual de hábil que el azar
+2021,10,18.75,0.0,-39.708333333333336,50.0,Regular,"Regular, casi igual de hábil que el azar","Malo, menos hábil que la climatología",Igual de hábil que el azar
+2021,11,21.428571428571427,0.0,-27.85714285714285,50.0,Regular,"Regular, casi igual de hábil que el azar","Malo, menos hábil que la climatología",Igual de hábil que el azar
+2021,12,44.11764705882353,0.0,11.441176470588232,50.0,Bueno,"Regular, casi igual de hábil que el azar","Regular, igual de hábil que la climatología",Igual de hábil que el azar
+2022,1,71.7948717948718,20.408163265306126,47.05128205128206,57.880434782608695,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Más hábil que el azar
+2022,2,67.6470588235294,0.0,34.97058823529411,50.0,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Igual de hábil que el azar
+2022,3,41.02564102564103,0.0,0.8205128205128213,50.0,Bueno,"Regular, casi igual de hábil que el azar","Regular, igual de hábil que la climatología",Igual de hábil que el azar
+2022,4,46.808510638297875,0.0,17.276595744680854,50.0,Bueno,"Regular, casi igual de hábil que el azar","Regular, igual de hábil que la climatología",Igual de hábil que el azar
+2022,5,60.869565217391305,0.0,33.84782608695652,50.0,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Igual de hábil que el azar
+2022,6,67.3913043478261,0.0,46.19565217391305,50.0,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Igual de hábil que el azar
+2022,7,44.44444444444444,0.0,20.044444444444444,50.0,Bueno,"Regular, casi igual de hábil que el azar","Regular, igual de hábil que la climatología",Igual de hábil que el azar
+2022,8,51.06382978723404,0.0,25.80851063829787,50.0,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Igual de hábil que el azar
+2022,9,68.08510638297872,0.0,42.829787234042556,50.0,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Igual de hábil que el azar
+2022,10,29.78723404255319,0.0,-9.72340425531915,50.0,Bueno,"Regular, casi igual de hábil que el azar","Malo, menos hábil que la climatología",Igual de hábil que el azar
+2022,11,63.829787234042556,0.0,37.148936170212764,50.0,Muy Bueno,"Regular, casi igual de hábil que el azar","Bueno, más hábil que la climatología",Igual de hábil que el azar
+2022,12,47.05882352941177,0.0,10.441176470588232,50.0,Bueno,"Regular, casi igual de hábil que el azar","Regular, igual de hábil que la climatología",Igual de hábil que el azar
+2023,1,35.294117647058826,-10.650887573964495,-11.176470588235295,44.18604651162791,Bueno,"Malo, menos hábil que el azar","Malo, menos hábil que la climatología",Menos hábil que el azar

@@ -1,0 +1,24 @@
+date,date,score,score,score,interpretation,interpretation,interpretation
+year,month,HR,HSS,2AFC,HR,HSS,2AFC
+2021,1,20.454545454545453,-18.552732871439567,30.843373493975903,Regular,"Malo, menos hábil que el azar",Menos hábil que el azar
+2021,2,28.94736842105263,-0.6869479882237484,52.13776722090261,Bueno,"Malo, menos hábil que el azar",Más hábil que el azar
+2021,3,28.94736842105263,3.389830508474577,48.910675381263616,Bueno,"Regular, casi igual de hábil que el azar",Menos hábil que el azar
+2021,4,56.52173913043478,10.068426197458457,58.849557522123895,Muy Bueno,"Regular, casi igual de hábil que el azar",Más hábil que el azar
+2021,5,43.75,2.114803625377639,53.4045393858478,Bueno,"Regular, casi igual de hábil que el azar",Más hábil que el azar
+2021,6,18.75,-20.308483290488436,43.45794392523364,Regular,"Malo, menos hábil que el azar",Menos hábil que el azar
+2021,7,18.75,0.0,46.27228525121556,Regular,"Regular, casi igual de hábil que el azar",Menos hábil que el azar
+2021,8,14.893617021276595,-4.618809126321647,44.21568627450981,Regular,"Malo, menos hábil que el azar",Menos hábil que el azar
+2021,9,23.404255319148938,-1.9277108433734913,35.67251461988304,Regular,"Malo, menos hábil que el azar",Menos hábil que el azar
+2021,10,16.666666666666668,-1.3192612137203181,52.495201535508635,Regular,"Malo, menos hábil que el azar",Más hábil que el azar
+2021,11,21.428571428571427,0.0,45.32163742690059,Regular,"Regular, casi igual de hábil que el azar",Menos hábil que el azar
+2021,12,23.529411764705884,-7.804878048780489,51.206434316353885,Regular,"Malo, menos hábil que el azar",Más hábil que el azar
+2022,1,69.23076923076923,11.698113207547179,52.17391304347826,Muy Bueno,"Regular, casi igual de hábil que el azar",Más hábil que el azar
+2022,2,55.88235294117647,21.538461538461537,77.66798418972331,Muy Bueno,"Regular, casi igual de hábil que el azar",Más hábil que el azar
+2022,3,23.076923076923077,-2.0942408376963337,46.06382978723404,Regular,"Malo, menos hábil que el azar",Menos hábil que el azar
+2022,4,38.297872340425535,-8.605577689243024,40.65155807365439,Bueno,"Malo, menos hábil que el azar",Menos hábil que el azar
+2022,5,32.608695652173914,-10.542635658914724,38.64027538726334,Bueno,"Malo, menos hábil que el azar",Menos hábil que el azar
+2022,6,30.434782608695652,-8.23529411764706,41.65067178502879,Bueno,"Malo, menos hábil que el azar",Menos hábil que el azar
+2022,7,48.888888888888886,15.163934426229508,63.975155279503106,Bueno,"Regular, casi igual de hábil que el azar",Más hábil que el azar
+2022,8,51.06382978723404,5.092186128182617,55.71847507331378,Muy Bueno,"Regular, casi igual de hábil que el azar",Más hábil que el azar
+2022,9,27.659574468085108,-2.173913043478262,54.81132075471698,Bueno,"Malo, menos hábil que el azar",Más hábil que el azar
+2022,10,29.78723404255319,-0.8452535760728206,47.50692520775623,Bueno,"Malo, menos hábil que el azar",Menos hábil que el azar
