@@ -1,14 +1,16 @@
-# from matplotlib import pyplot as plt
-# from collections import Counter
-
 import plotly.express as px
 import streamlit as st
 import pandas as pd
-import datetime as dt
 
 datapath = 'jan23data/'
-aadata = 'climaest_scores_aa_2021-2022.csv'
-ngdata = 'climaest_scores_nextgen_2021-2022.csv'
+aadata = 'scores_aa_2021-2022.csv'
+ngdata = 'scores_nextgen_2021-2022.csv'
+
+# prefixes = ['','climaest_','obschirps_','raster_']
+datafont = {'Climatología de CHIRPS y observados de estaciones.':'',
+            'Climatología y observados de estaciones.':'climaest_',
+            'Climatología y observados de CHIRPS sampleados a estaciones.':'obschirps_',
+            'Climatología y observados de CHIRPS raster completo.':'raster_'}
 
 metrics = ['HR','HSS','2AFC','LEPS']
 
@@ -16,8 +18,8 @@ years = [2021,2022,2023]
 months = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']
 months_to_number = {'ene':1,'feb':2,'mar':3,'abr':4,'may':5,'jun':6,'jul':7,'ago':8,'sep':9,'oct':10,'nov':11,'dic':12}
 
-monAA_original = pd.read_csv(datapath+aadata,header=[0,1])[['date','interpretation']].droplevel(0,axis=1)
-monNG_original = pd.read_csv(datapath+ngdata,header=[0,1])[['date','interpretation']].droplevel(0,axis=1)
+# monAA_original = pd.read_csv(datapath+aadata,header=[0,1])[['date','interpretation']].droplevel(0,axis=1)
+# monNG_original = pd.read_csv(datapath+ngdata,header=[0,1])[['date','interpretation']].droplevel(0,axis=1)
 scoreinterp = pd.read_csv('scores_interpretations.csv')
 
 GrPi = ['#c77de0','#ddf458']
@@ -98,12 +100,16 @@ def build_charts(monAA_input,monNG_input,mondf_input):
         
     return barcharts,aapiecharts,ngpiecharts
 
-def build_page(selected_years_input,selected_months_key_input):
+def build_page(selected_years_input,selected_months_key_input,selected_analysis_input):
     selected_months = []
     for month in selected_months_key_input:
         selected_months.append(months_to_number[month])
 
     # print(selected_years_input)
+
+    prefix = datafont[selected_analysis_input]
+    monAA_original = pd.read_csv(datapath+prefix+aadata,header=[0,1])[['date','interpretation']].droplevel(0,axis=1)
+    monNG_original = pd.read_csv(datapath+prefix+ngdata,header=[0,1])[['date','interpretation']].droplevel(0,axis=1)
 
     monAA, monNG, mondf = get_ranges(selected_years_input,selected_months,monAA_original,monNG_original)
     barcharts, aapiecharts, ngpiecharts = build_charts(monAA,monNG,mondf)
@@ -138,10 +144,11 @@ selected_months_key = months
 
 
 with st.expander('Filtros:'):
+    selected_analysis = st.selectbox('Fuente de datos:',datafont.keys())
     selected_years = st.multiselect('Años:',years,years)
     selected_months_key = st.multiselect('Meses:',months,months)
 
-build_page(selected_years,selected_months_key)
+build_page(selected_years,selected_months_key,selected_analysis)
 
 
 
