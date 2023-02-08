@@ -75,8 +75,8 @@ def build_charts(monAA_input,monNG_input,mondf_input):
         x=0.01
         ),title = {
             'text': "AA",
-            'y':0.5, # new
-            'x':0.5,
+            'y':0, # new
+            'x':0,
             'xanchor': 'center',
             'yanchor': 'bottom' # new
             })
