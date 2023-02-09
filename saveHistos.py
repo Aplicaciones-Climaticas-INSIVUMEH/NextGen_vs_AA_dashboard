@@ -2,6 +2,7 @@ import plotly.express as px
 import plotly.io as pio
 import streamlit as st
 import pandas as pd
+import os
 
 datapath = 'jan23data/'
 aadata = 'scores_aa_2021-2022.csv'
@@ -23,13 +24,13 @@ months_to_number = {'ene':1,'feb':2,'mar':3,'abr':4,'may':5,'jun':6,'jul':7,'ago
 # monNG_original = pd.read_csv(datapath+ngdata,header=[0,1])[['date','interpretation']].droplevel(0,axis=1)
 scoreinterp = pd.read_csv('scores_interpretations.csv')
 
-GrPi = ['#c77de0','#ddf458']
-Pis = ['#c77de0','#8053db','#2d24cc','#120d72']
-Grs = ['#ddf458','#7da81f','#246d10','#044c2d']
+# GrPi = ['#c77de0','#ddf458']
+# Pis = ['#c77de0','#8053db','#2d24cc','#120d72']
+# Grs = ['#ddf458','#7da81f','#246d10','#044c2d']
 
-# GrPi = ['#EFB941','#1B587B']
-# Grs = ['#1B587B','#49829E','#A4D7E7','#D8F6FF','#ECECEC']
-# Pis = ['#ECA240','#EFB941','#FFDB59','#FFE881','#FFF2B8']
+GrPi = ['#EFB941','#1B587B']
+Grs = ['#1B587B','#49829E','#A4D7E7','#D8F6FF','#ECECEC']
+Pis = ['#ECA240','#EFB941','#FFDB59','#FFE881','#FFF2B8']
 
 
 def get_ranges(selected_years_input,selected_months_input,monAA_input,monNG_input):
@@ -127,7 +128,7 @@ def build_page(selected_years_input,selected_months_key_input,selected_analysis_
     monAA, monNG, mondf = get_ranges(selected_years_input,selected_months,monAA_original,monNG_original)
     barcharts, aapiecharts, ngpiecharts = build_charts(monAA,monNG,mondf)
 
-    # savecharts(barcharts,aapiecharts,ngpiecharts)
+    savecharts(barcharts,aapiecharts,ngpiecharts)
 
     tabs = st.tabs(metrics)
 
@@ -148,14 +149,18 @@ def build_page(selected_years_input,selected_months_key_input,selected_analysis_
             
     #####################################
 
-# def savecharts(bars:dict,pieaa:dict,pieng:dict):
-#     for chart,metric in zip(bars.keys(),metrics):
-#         pio.write_image(bars[chart],'plots/{}_bar.svg'.format(metric))
-#     for chart,metric in zip(pieaa.keys(),metrics):
-#         pio.write_image(pieaa[chart],'plots/{}_pieAA.svg'.format(metric))
-#     for chart,metric in zip(pieng.keys(),metrics):
-#         pio.write_image(pieng[chart],'plots/{}_pieNG.svg'.format(metric))
+def savecharts(bars:dict,pieaa:dict,pieng:dict):
 
+    savepath = 'plots/'
+
+    for chart,metric in zip(bars.keys(),metrics):
+        pio.write_image(bars[chart],'{}{}_bar.svg'.format(savepath,metric))
+    for chart,metric in zip(pieaa.keys(),metrics):
+        pio.write_image(pieaa[chart],'{}{}_pieAA.svg'.format(savepath,metric))
+    for chart,metric in zip(pieng.keys(),metrics):
+        pio.write_image(pieng[chart],'{}{}_pieNG.svg'.format(savepath,metric))
+
+    os.system('cd {} && inkscape --export-type="pdf" *.svg'.format(savepath))
 
 ########################################################################################################################################
 # FrontEnd
